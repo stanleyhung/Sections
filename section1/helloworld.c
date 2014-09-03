@@ -4,14 +4,15 @@
 
 char* generate_hello_world() {
     int i;
-    const char *message = "hello world!";
+    const char *message = "Hello World!";
     char *output;
     for (i = 0; i < strlen(message); i++) {
-        *(output + i) = *(message + i);
+        output[i] = *(message + i);
     }
     return output;
 }
 
+// prints "Hello World!"
 void main() {
     int i;
     char *message = generate_hello_world();
